@@ -41,8 +41,8 @@ def title_from_file(path: Path) -> str:
     return stem
 
 
-def md_to_html_path(rel: str) -> str:
-    return rel.replace("\\", "/").rsplit(".", 1)[0] + ".html"
+def md_to_reader_path(rel: str) -> str:
+    return f"reader.html?path={rel.replace(chr(92), '/')}"
 
 
 def collect_chapters() -> list[dict]:
@@ -56,13 +56,13 @@ def collect_chapters() -> list[dict]:
             if md.stat().st_size == 0:
                 continue
             rel = md.relative_to(ROOT).as_posix()
-            html_path = md_to_html_path(rel)
+            reader_path = md_to_reader_path(rel)
             articles.append(
                 {
                     "title": title_from_file(md),
                     "path": rel,
-                    "html": html_path,
-                    "url": f"{PAGES_BASE}/{html_path}",
+                    "html": reader_path,
+                    "url": f"{PAGES_BASE}/{reader_path}",
                 }
             )
         chapters.append(
@@ -254,7 +254,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
       ch.articles.forEach(a => {{
         const li = document.createElement("li");
         const link = document.createElement("a");
-        link.href = a.html;
+        link.href = "reader.html?path=" + encodeURIComponent(a.path);
         link.textContent = a.title;
         li.appendChild(link);
         ul.appendChild(li);
