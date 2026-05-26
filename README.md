@@ -1,11 +1,13 @@
 # labuladong 的算法小抄
 
+> **迁移说明：** 算法小抄已并入 [RiddleGo/interview-hub](https://github.com/RiddleGo/interview-hub/tree/main/leetcode)。**请访问 [https://riddlego.github.io/interview-hub/leetcode/](https://riddlego.github.io/interview-hub/leetcode/)** — 本仓库 GitHub Pages 不再维护。
+
 > **说明：** 本仓库教程正文中的示例代码已全部转换为 **Python** 版本（原书为 Java/C++ 为主）。算法思路与章节结构保持不变。
 
 ## 在线访问
 
-- **学习总入口（推荐）**：https://riddlego.github.io/leetcode/
-- **面经导航**：https://riddlego.github.io/interview-hub/index.html
+- **算法小抄（推荐）**：https://riddlego.github.io/interview-hub/leetcode/
+- **学习总入口**：https://riddlego.github.io/interview-hub/index.html
 
 <p align='center'>
 <a href="https://labuladong.gitbook.io/algo" target="_blank"><img alt="Website" src="https://img.shields.io/website?label=%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E4%B9%A6&style=flat-square&down_color=blue&down_message=%E7%82%B9%E8%BF%99%E9%87%8C&up_color=blue&up_message=%E7%82%B9%E8%BF%99%E9%87%8C&url=https%3A%2F%2Flabuladong.gitbook.io%2Falgo&logo=Gitea"></a>
