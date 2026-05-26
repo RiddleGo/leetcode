@@ -2,11 +2,12 @@ title: labuladong 算法小抄 · Python 版
 description: 算法教程 + 面经导航入口
 theme: jekyll-theme-cayman
 markdown: kramdown
-plugins:
-  - jekyll-relative-links
 exclude:
   - scripts/
   - README.md
   - chapters.json
+  - DEPLOY.md
   - Gemfile
   - Gemfile.lock
+  - .gitignore
+  - .github/
