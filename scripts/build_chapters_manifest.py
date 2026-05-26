@@ -324,6 +324,11 @@ def main() -> None:
     chapters = collect_chapters()
     count = write_outputs(chapters)
     update_readme(chapters)
+
+    import subprocess
+    import sys
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "prepare_docs.py")], check=True)
+
     print(f"Generated chapters.json, index.html, README TOC ({count} articles, {len(chapters)} chapters)")
 
 
