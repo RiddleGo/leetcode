@@ -1,0 +1,36 @@
+/* Improve Chinese long-form reading on GitHub Pages */
+.main-content {
+  max-width: 860px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content pre {
+  overflow-x: auto;
+  font-size: 0.9em;
+}
+
+.main-content code {
+  font-size: 0.9em;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  margin-top: 1.5em;
+}
+
+.main-content p {
+  margin-bottom: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-header {
+    background-image: linear-gradient(120deg, #1a2332, #0d3d56);
+  }
+}
